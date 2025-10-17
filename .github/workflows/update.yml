@@ -24,6 +24,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: ${{ steps.update-time.outputs.UPDATED_TIME }}
-          commit_options: '--amend'
           push_options: '--force'
           skip_fetch: true
